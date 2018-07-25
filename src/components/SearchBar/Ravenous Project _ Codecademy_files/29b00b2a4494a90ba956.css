@@ -1,0 +1,608 @@
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.container__3ob3fB-nROC9zycL11oWfn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 90vw;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
+
+.radio__3W4vPBGBhuuQqfUqu-AswZ {
+  -webkit-appearance: radio;
+     -moz-appearance: radio;
+          appearance: radio;
+  margin-right: 0.625rem; }
+
+.desktop__2as-Ju7nnR5EKI044m3Om {
+  height: 6.25rem;
+  padding: 1rem; }
+
+.copy__3hBopOAfL4ry3rNvI5iO9e {
+  line-height: 1.5625rem; }
+
+.content__3IEv2mIrrOtVtXIjR8VhgR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5625rem;
+  flex: 1 1; }
+
+.heading__6BvolOFvW3UWRoYmJ8-CL {
+  font-weight: bold;
+  font-size: 1.375rem; }
+
+.confirm__1bLZ0fSu6fsdSpApx74RCd {
+  margin: 20px;
+  width: 12.5rem; }
+
+.seenAlready__2W6ynDlWtg2kDUN8o5bgcu {
+  padding: 0.625rem;
+  width: 100%;
+  border-top: 1px solid #000000; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+@-webkit-keyframes fade-in__31WUQ5Bmy4dK7PuE-fOpIr {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in__31WUQ5Bmy4dK7PuE-fOpIr {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out__3i-4XN7dg1WrhQvz3kMOPl {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out__3i-4XN7dg1WrhQvz3kMOPl {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.overlay__3VZoRx506F-jSuvoxLwSVd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .overlay__3VZoRx506F-jSuvoxLwSVd::before {
+    content: "";
+    background-color: rgba(21, 20, 31, 0.8);
+    -webkit-animation: fade-in__31WUQ5Bmy4dK7PuE-fOpIr 500ms forwards;
+            animation: fade-in__31WUQ5Bmy4dK7PuE-fOpIr 500ms forwards;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.overlayClosing__pI8LF8UczIpFZpwNTDH7e::before {
+  -webkit-animation: fade-out__3i-4XN7dg1WrhQvz3kMOPl 300ms forwards;
+          animation: fade-out__3i-4XN7dg1WrhQvz3kMOPl 300ms forwards; }
+
+.modalContent__2nyerWJYwhtqNMxqgzbzMr {
+  z-index: 0; }
+  .modalContent__2nyerWJYwhtqNMxqgzbzMr:focus {
+    outline: none; }
+
+.screenReaderOnly__1SyakAQGSIs3AM051DW1dt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.control__D9eW5UKHb2ng_LqoydLEG {
+  padding: 14px;
+  color: #a9aaad;
+  cursor: pointer;
+  background-color: inherit; }
+  .control__D9eW5UKHb2ng_LqoydLEG:hover {
+    color: #d4d5d6; }
+
+.controlDisabled__13_a1W1B6Iwko_9DreIxbS {
+  pointer-events: none;
+  opacity: 0.4; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.footer__1avEDx0U9uPTksme12z8GJ {
+  height: 50px;
+  background-color: #15141f;
+  color: #ffffff;
+  z-index: 14; }
+
+.position__1lzCOFXPgJEtZu1sbxdG0 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  top: -8px;
+  z-index: 10; }
+
+.position-center__FVGV2tQU1L-P6Z9TMIcJD {
+  left: 50%;
+  -webkit-transform: translateY(-100%) translateX(-50%);
+          transform: translateY(-100%) translateX(-50%); }
+
+.position-left__4pAxj3TPKbWFQ3yuD0MYh {
+  left: 10px; }
+
+.position-right__2xWVjf5FN0FbSicAaIGJ5G {
+  right: 10px; }
+
+.tooltip__2wmDW8keVtpofNhsSnSMBW {
+  padding: 10px;
+  z-index: 98;
+  max-width: 450px;
+  white-space: normal;
+  font-size: 14px; }
+
+.content__GGE5Cg7MHOhx3YOmNO9g0 {
+  position: relative; }
+
+.arrow__4b5MGFSdTHa_M1-YB0Bow {
+  overflow: visible;
+  border: solid;
+  border-color: transparent;
+  border-width: 6px 6px 0;
+  bottom: -6px;
+  left: 25px;
+  position: absolute;
+  z-index: 99; }
+
+.arrow-left__1bOtB5i0TTWaM-dlQQeHHK {
+  left: 25px; }
+
+.arrow-center__5qBNV6NJVpr7TDT9Y9dVp {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.arrow-right__24D7u7Mxhf4_Men-RibzaV {
+  right: 25px; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.tooltip__rGYENLyKnXw3dFJrHxapF {
+  background-color: #15141f;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Monaco, Menlo, "Ubuntu Mono", "Droid Sans Mono", Consolas, monospace; }
+
+.arrow__368SD__jdXY56QCbwOKxe2 {
+  border-top-color: #15141f; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.tooltip__1Ul4m7Og0s3x0PP87SF-nb {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.arrow__3vsr7y3va_loEvCy-B0bgp {
+  border-top-color: #ffffff; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.container__2nBQblEbxtWABsG-PzJCJY {
+  padding: 0 2rem 2rem; }
+
+.headerMsg__3plWc8vdIt096bVGraVToV {
+  font-size: 2rem;
+  line-height: 27px;
+  color: #525252; }
+
+.mainMsg__2xzTH40Y3NuPjCRDA-zrpa {
+  text-align: left; }
+
+.maintButton__1ioHX4Aq9TLq2vD5RxHz8v {
+  margin: 0 0.5rem; }
+
+.iconContainer__3Yg7iqG5sp8sfgjsnifN3p {
+  padding: 22px; }
+
+.icon__1fpFg6Yg6qKMUy9gCFo_L0 {
+  color: #525252; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.wrapper__1QlB8Mm4sZduRwvRo_fo-m {
+  text-align: center;
+  min-width: 22.5rem;
+  max-width: 25rem;
+  min-height: 19rem;
+  max-height: 37.5rem;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 2rem; }
+
+.closeButton__1R2n7SqgKpOpeSHkX-XPhI {
+  position: relative;
+  float: right;
+  top: -1rem;
+  margin-bottom: -1rem;
+  font-size: 1.25rem; }
+
+.header__2Majad4m5U8MHLCID-dHEY {
+  clear: both;
+  font-size: 1.625rem;
+  margin: 1rem 0; }
+
+.subheader__v6KEawBemdO9U-mLX-9v7 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem; }
+
+.buttonWrapper__2i11gOmcNK55LFt3ZI17mq {
+  width: 15.0625rem;
+  margin: 0 auto; }
+
+.primaryButton__2iCCTCUFZNKgTlQXCQmBPg {
+  margin-bottom: 1rem; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+@-webkit-keyframes animateIn__3CBznqXnKs3rcNHCyusFiE {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+@keyframes animateIn__3CBznqXnKs3rcNHCyusFiE {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes animateOut__3WkD_9rIA_Q6CqtObV7TuN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes animateOut__3WkD_9rIA_Q6CqtObV7TuN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.modalContent__28oy1hPFQLOrRdv_whaCT7 {
+  max-width: 40rem;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  border: 12px solid #37c3be;
+  padding: 2.5rem;
+  opacity: 0;
+  -webkit-animation: animateIn__3CBznqXnKs3rcNHCyusFiE 300ms 400ms forwards;
+          animation: animateIn__3CBznqXnKs3rcNHCyusFiE 300ms 400ms forwards;
+  color: #292929;
+  font-size: 1.1rem; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 a {
+    font-weight: bold;
+    color: #6400e4; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 b {
+    font-weight: bold;
+    font-size: 1.1rem; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 p {
+    line-height: 1.5;
+    font-size: 1.1rem; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 h1,
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 p,
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 ul {
+    color: #292929 !important;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+.modalIsClosing__35WkaZF7W4lvGAxPP83UTz {
+  -webkit-animation: animateOut__3WkD_9rIA_Q6CqtObV7TuN 150ms;
+          animation: animateOut__3WkD_9rIA_Q6CqtObV7TuN 150ms; }
+
+.mintyEmphasis__3Z5Ed9OVIw-pCtStzqo4nM {
+  color: #37c3be;
+  display: block;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 3.2rem; }
+
+.centeredBtn__3uNV3Z0YQiNf2OY4JVlnxP {
+  text-align: center;
+  margin-top: 2rem; }
+
+.modalOverlay__37pXIRdQovmJwXyzKM_bXR::before {
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.proLogo__1PCU3Ylr-Tj21lTHk_qaah {
+  vertical-align: bottom;
+  width: 5rem; }
+
+.headingText__2naeqBp-Hi7d_MSwN-NguW {
+  font-size: 1.9rem;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.1;
+  color: #292929; }
+
+.bulletList__1TaJLUQT3KuMiS_FFAw7wC li {
+  list-style-type: disc !important;
+  margin-top: 0.75rem;
+  font-size: 1.1rem; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.trialBannerCardShell__1OyWEdaBCjxPzUXrzfLeRS {
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 12.1875rem;
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 48rem) {
+    .trialBannerCardShell__1OyWEdaBCjxPzUXrzfLeRS {
+      height: auto; } }
+
+.trialBannerContainer__1KqMO2s1Jf3CamhulVbzi- {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch; }
+  @media only screen and (min-width: 48rem) {
+    .trialBannerContainer__1KqMO2s1Jf3CamhulVbzi- {
+      flex-direction: row; } }
+
+.trialBannerClose__2kHBKu6teKLJv4mF0dOaht {
+  border-color: transparent;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 0.625rem;
+  margin-top: 0.3125rem; }
+
+.closeIcon__1qwDm5yvt5NNJ9sphYMolB {
+  color: #7a7a7a; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.bannerProContainer__1g3NOfe3bs7ZPt1wA5i-0z {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.625rem; }
+
+.bannerPro__3usjVgiipXw5V-SnKdhoN4 {
+  width: 3.5625rem;
+  height: 1.625rem;
+  margin-top: 0.75rem;
+  align-items: center; }
+
+.bannerProImage__2HCRozbbFGizFzIKIw6uAV {
+  height: 1.625rem; }
+
+.bannerBodyTitle__27iV9gl9TaO5YjU2JVTDG1 {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 1.0625rem;
+  text-transform: none;
+  font-size: 1.25rem;
+  padding-left: 0.5rem; }
+
+.bannerBodyMain__3eNZq3FB3CVik4mpWEAFyw {
+  font-size: 1rem;
+  margin-bottom: 0.3125rem;
+  color: #000000; }
+  @media only screen and (min-width: 48rem) {
+    .bannerBodyMain__3eNZq3FB3CVik4mpWEAFyw {
+      padding-right: 0.1875rem; } }
+
+.bannerBodyContainer__3oq8W9WXy21mNcUKWtUNUB {
+  display: flex;
+  flex-direction: column; }
+
+.bannerBodySubtext__HyyLflnAFajk_h8T5MUR_ {
+  margin-top: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; }
+  @media only screen and (min-width: 64rem) {
+    .bannerBodySubtext__HyyLflnAFajk_h8T5MUR_ {
+      flex-direction: row;
+      align-content: flex-start;
+      padding: 0; } }
+
+.bannerUpgradeText__3yN_F8pHqqJpe1_pZGpLLU {
+  font-size: 0.875rem;
+  border-color: transparent;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  color: #4c7ef3;
+  font-weight: bold;
+  padding-left: 0;
+  align-self: flex-start;
+  margin-top: 2.8125rem;
+  margin-bottom: 0.22rem; }
+  @media only screen and (min-width: 48rem) {
+    .bannerUpgradeText__3yN_F8pHqqJpe1_pZGpLLU {
+      margin-top: auto; } }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.daysLeftCircle__22yPaDkv1x8QIKeidfVffv {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 3.125rem;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  align-self: flex-end;
+  position: absolute;
+  top: calc(100% - 85px);
+  right: 0.9375rem; }
+  @media only screen and (min-width: 48rem) {
+    .daysLeftCircle__22yPaDkv1x8QIKeidfVffv {
+      position: relative;
+      top: calc(50% - 1.75rem);
+      align-self: auto;
+      right: auto; } }
+
+.daysLeftCirclePurple__1kHLD4ZDh9XUh0XzAQsABp {
+  background-color: #8782ae; }
+
+.daysLeftCircleRed__3h8WTODv_IxWHUw-B0tqA- {
+  background-color: #fa4359; }
+
+.isExpiredCircle__32h4NJklTT96_KTc0EOm_t {
+  background-color: #fa4359;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.endedText__2L99qqCiL1B3XS0RL3PZvb {
+  font-weight: bold; }
+
+.isExpiredContainer__2PYzpuWWbIhHOTVD2aPTTA {
+  display: flex;
+  justify-content: center; }
+
+.daysLeftContent__2N0kjxhIsid958qPZRm4nT {
+  display: flex;
+  flex-direction: column; }
+
+.daysLeftNumber__2yienwnWsnvv2Zi7MHWE3i {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: -0.5625rem; }
+
+.daysLeftText__22wTE5z-i8e8_2Fkd-oH6q {
+  color: #ffffff;
+  display: block;
+  position: relative;
+  top: -0.5rem; }
+
+.daysLeftTriangle__2lU1MoKpb9wiQu_j0oXcZc {
+  width: 0;
+  height: 0;
+  border-bottom: 67px solid #37c3be;
+  border-left: 73px solid transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+
+/*# sourceMappingURL=29b00b2a4494a90ba956.css.map*/
